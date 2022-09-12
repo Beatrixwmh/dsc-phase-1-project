@@ -1,12 +1,12 @@
 # Microsoft Movie
 **Author**: Man Hei Wong
 ## Overview
-Microsoft wants to make a movie, and would like some insight into the current movie industry in order to figure out how to create a successful movie that would generate the most amount of revenue. In this project, I drew data from various movie websites to anlayse correlations between different variables to formulate three recommnedations that would maximize the chances of success. The results indicate that there is a positive correlation between budget and revenue, that the top two genres with highest box office earnings have been Comedy and Action, and that the movies that tend to have highest gross are between 130 and 140 minutes. My recommendations are therefore: 
+Microsoft wants to make a movie and would like some insight on the current movie industry in order to figure out how to create a successful movie that would generate the most amount of revenue. In this project, I drew data from various movie websites to anlayse correlations between different variables, and formulated three recommnedations that would maximize the chances of success. The results indicate that there is a positive correlation between budget and revenue, that the top two genres with highest box office earnings have been Comedy and Action, and that the movies that tend to have highest gross are between 130 and 140 minutes. My recommendations are therefore: 
 1. liberally invest into the production of the movie
 2. make an Action/ Comedy movie
 3. keep the movie around 140 minutes
 ## Business Problem
-It is really hard to guage the types of movies that are performing well or the reason they are successful since there are many characteristics of a movie, like the genre, reputaion of the director/movie studio, time of release, that can be contributing to its appeal. Moreover, there are factors that are difficult to replicate, like the plot or unique cinametography style. I therefore singled out select variables that are easy to control in the production process-namely production budget, genre, and run time- and performed aggregate functions on large amounts of data to find out what has the highest probability of success.
+It is really hard to guage the types of movies that are performing well or the reason they are successful since there are many characteristics of a movie, such the genre, reputaion of the director/movie studio, time of release etc. that can be contributing to its appeal. Moreover, there are factors that are difficult to replicate, like the plot or unique cinametography style. I therefore singled out select variables that are easy to control in the production process-namely production budget, genre, and run time- and performed aggregate functions on large amounts of data to find out what has the highest probability of success.
 The questions I will be asking are:
 1. does a bigger investment into the movie production yield higher returns?
 2. what are the average box office earnings of each genre, and are they changing over the years? Do their popularity vary with the time of year?
@@ -33,8 +33,8 @@ Cosidering the vast amount of movie data points taken into account, this seems t
 According to this graph, Action movies have been consistently earning the most amount of money up until 2014, where it was overtaken by comedy. Moreover, comedy is the only genre on an upward trend.
 ### genre and time of release
 ![graph3](viz2-2.png)
-Here we can that the two genres expreinece significant peaks and falls in box office earnings depedning on the time of year. Comdey earnings peak at Februrary and June, while Action peaks at May and November respectively.
-I think this informaton can be extrapolated to all movies of that genre because taking the mean of all movies gives a good estimate of how well the genre is doing in the box office. However, I did not take into account the standard deviation of the earnings, which should be considered when trying to figure out how probable a genre of movie would have box office revenue close to the mean. 
+Here we can that the two genres expreinece significant peaks and falls in box office earnings depedning on the time of year: Comdey earnings peak at Februrary and June, while Action peaks at May and November respectively.
+I think this informaton can be extrapolated to all movies of that genre because taking the mean of all movies gives a good estimate of how well the genre is doing in the box office. However, I did not take into account the standard deviation or the shape of the distribution of the earnings, which should be considered when trying to figure out how probable a genre of movie would have box office revenue close to the mean. 
 ### runtime and revenue
 ![graph4](viz3.png)
 For the runtime and revenue, there seems to be a point of diminishing returns at runtime= 130 minutes, before which the earnigns exponentially increases as the runtime increases.
@@ -42,8 +42,9 @@ Since I have eliminated the runtimes where there are too few data points (less t
 ## Conclusions
 In a nutshell, based on my analysis presented above, I have found a positive correlation between production budget and profit, and runtime and box office earnings. Moreover, I found the top two genres- Action and Comedy, that had been the most consistent in public appeal over the years, and also found the respective ideal times to release movies of these two genres. It was from these conclusions drawn that my three recommendations stated in the overveiw were formulated, to reiterate, they are: 
 1. liberally invest into the production of the movie
-2. make an Action/ Comedy movie
+2. make an Action/ Comedy movie (release Feb/June if comedy; May/November if action)
 3. keep the movie around 140 minutes
+
 These recommendations were based on the overall highest probability of earning the most amount of revenue from the pool of samples I was able to obtain from two credible movie sites. However, these only provide general guidance that highlight the characteristics that successful movies tend to have, and one must keep in mind that correlation does not necessarily mean causation. Moreover, there are also many more factors that contribute to success that I was not able to address, like the plot structure and actors to hire. Regardless, I hope the information provided was usefull for giving one a good guage of what the movie industry is currently like, and its most apparent trends.
 
 ## For More Information
