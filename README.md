@@ -15,12 +15,15 @@ These questions are importang because determining the production budgeti and wha
 
 ## Data
 The data being used in my analysis will be pulled from the most popular movie websites that contain the relevant information for answering the questions I have posed. For the analysis of the correlation between budget and profit, I used data from The Numbers, which gives information about the production budget and worldwide gross of more than 5000 movies. Since I want to find the profit made and not just the total revenue, I will be using the metric of gross/budget to measure the return on investment as a function of production budget.
+
 For my second business question on the genre, I used data from Rotten Tomatoes, which includes the genre, theater release date, and the box office earnings of every movie. I used these variables to find the earnings of different gernres over the years to find consistently popular or increasingly popular genres. For the top two genres in terms of revenue, I also analysed their earnings by month to see if there are certain seasons in which the genre is particularly popular.
 Finally for the third question about the runtime and revenue, I used the runtime length and box office earnings provided bny Rotten Tomatoes to find the earnings as a function of runtime.
 
 ## Methods
 For the analysis of budget abd profit, I first eliminated the outliers (movies with either budget or profit higher than the 75th percetnile of all data points). This is because extreme cases where one puts a lot of money into the production or a movie that makes an astronomical amount of money are very rare with very few data points, and are therefore likely not representative of the general trend. On the contrary, there are quite a few movies that are on the lower end of the extreme (<= 25th percentile) and would be useful for the analysis. I plotted these data points as a scatter plot and added a linear trend line using the method of least squares to indicate the general correlation between budget and profit. 
+
 As for investigating genre success, I first found the top 5 most frequently made genres because they have the most amount of data points. Having a sufficient amount of data points controls for the different variables that can contribute to a movie's success, and therefore does a better job in singling out genre as a varibale relating to revenue. I then grouped the movies by genre, then grouped each of the five genres by year and took the average of their respective box office earnings in any given year. This would give one a guage of the success of each genre over the years. Similar to the method above, I made a scatter plot and added trend line for each genre to give a clear view of the general trend over the years. To investugate the ideal time to release the movie, I also took all the movies from the top two genres and grouped them by month, and made a line plot of their average earnings each month. Since I was trying to find how thrit success would rise and fall over the year to find the peak season for each, I used a line plot instead of a scatter plot with a trend line, since the nonlinearity is of interest instead of the generalized linear trend.
+
 Similarly, for the relationship between runtime and box office earnings, I grouped the movies by their runtime rounded to the nearest ten minutes- since I was interested in the rough time range and having movies that differ by a few minutes to be two different data points would greatly crowd the graph- then took the mean of the box office earnings of each group to make a line plot of earnigns over runtime. However, I noticed many data points on either ends of the runtime spectrum had only 1 to 2 plot points, which would not make a good representation of movies of that runtime in general. I therefore removed the data points consisting of less than 9 movies.
 
 ## Results
@@ -33,11 +36,15 @@ Cosidering the vast amount of movie data points taken into account, this seems t
 According to this graph, Action movies have been consistently earning the most amount of money up until 2014, where it was overtaken by comedy. Moreover, comedy is the only genre on an upward trend.
 ### genre and time of release
 ![graph3](viz2-2.png)
+
 Here we can that the two genres expreinece significant peaks and falls in box office earnings depedning on the time of year: Comdey earnings peak at Februrary and June, while Action peaks at May and November respectively.
+
 I think this informaton can be extrapolated to all movies of that genre because taking the mean of all movies gives a good estimate of how well the genre is doing in the box office. However, I did not take into account the standard deviation or the shape of the distribution of the earnings, which should be considered when trying to figure out how probable a genre of movie would have box office revenue close to the mean. 
+
 ### runtime and revenue
 ![graph4](viz3.png)
 For the runtime and revenue, there seems to be a point of diminishing returns at runtime= 130 minutes, before which the earnigns exponentially increases as the runtime increases.
+
 Since I have eliminated the runtimes where there are too few data points (less than 9), and the database of movies from which this graph was made are very varied such that the only variable they share is the runtime, I think this correlation between revenue and runtime have reasonable predictive power of success.
 ## Conclusions
 In a nutshell, based on my analysis presented above, I have found a positive correlation between production budget and profit, and runtime and box office earnings. Moreover, I found the top two genres- Action and Comedy, that had been the most consistent in public appeal over the years, and also found the respective ideal times to release movies of these two genres. It was from these conclusions drawn that my three recommendations stated in the overveiw were formulated, to reiterate, they are: 
