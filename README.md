@@ -29,10 +29,12 @@ Similarly, for the relationship between runtime and box office earnings, I group
 ## Results
 ### budget and profit ratio
 ![graph1](viz1.png)
+
 As seen above, there seems to be a positive correlation between production budget and profit ratio, with a budget line of about 10 million dollars below which movies are more likely to suffer a loss than a gain. 
 Cosidering the vast amount of movie data points taken into account, this seems to be a pretty good generalization and can be extrapolated to movies beyond the ones listed in the website. However, the data points are very scattered and the correlation is not very strong, therefore while it can be taken into account when considering how much to invest, one must keep in mind the break even line is only a very rough estimate. 
 ### genres over the years
 ![graph2](viz2-1.png)
+
 According to this graph, Action movies have been consistently earning the most amount of money up until 2014, where it was overtaken by comedy. Moreover, comedy is the only genre on an upward trend.
 ### genre and time of release
 ![graph3](viz2-2.png)
@@ -43,6 +45,7 @@ I think this informaton can be extrapolated to all movies of that genre because 
 
 ### runtime and revenue
 ![graph4](viz3.png)
+
 For the runtime and revenue, there seems to be a point of diminishing returns at runtime= 130 minutes, before which the earnigns exponentially increases as the runtime increases.
 
 Since I have eliminated the runtimes where there are too few data points (less than 9), and the database of movies from which this graph was made are very varied such that the only variable they share is the runtime, I think this correlation between revenue and runtime have reasonable predictive power of success.
