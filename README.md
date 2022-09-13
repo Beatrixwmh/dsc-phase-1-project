@@ -67,7 +67,7 @@ For any additional questions, please contact **Beatrix Wong, beatrix.wmh@hotmail
 ```
 ├── README.md                           <- The top-level README for reviewers of this project
 ├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
-├── DS_Project_Presentation.pdf         <- PDF version of project presentation
+├── DS_Project_Presentation(1).pdf         <- PDF version of project presentation
 ├── zippedData                          <- Both sourced externally and generated from code
 |        |-viz1.png
 |-images-|-viz2-1.png
