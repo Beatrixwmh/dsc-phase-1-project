@@ -68,6 +68,9 @@ For any additional questions, please contact **Beatrix Wong, beatrix.wmh@hotmail
 ├── README.md                           <- The top-level README for reviewers of this project
 ├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
 ├── DS_Project_Presentation.pdf         <- PDF version of project presentation
-├── data                                <- Both sourced externally and generated from code
-└── images                              <- Both sourced externally and generated from code
+├── zippedData                          <- Both sourced externally and generated from code
+|        |-viz1.png
+|-images-|-viz2-1.png
+         |-viz2.2.png
+         |-viz3.png                     <- Both sourced externally and generated from code
 ```
